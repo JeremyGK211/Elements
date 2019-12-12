@@ -1,0 +1,171 @@
+/* Elements */
+
+body {
+	background-color: black;
+	color: black; }
+
+.board {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.board2 {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.board3 {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.board4 {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.board5 {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.board6 {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.board7 {
+  margin: auto;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.square:nth-child(even) {
+  background: red;
+  animation-delay: 1s;
+}
+.square:nth-child(odd) {
+  background: pink;
+  z-index: 1;
+  position: relative;
+}
+
+.board2 .square:nth-child(even) {
+  background: navajowhite;
+  animation-delay: 1s;
+}
+.board2 .square:nth-child(odd) {
+  background: orange;
+  z-index: 1;
+  position: relative;
+}
+
+.board3 .square:nth-child(even) {
+  background: gold;
+  animation-delay: 1s;
+}
+.board3 .square:nth-child(odd) {
+  background: yellow;
+  z-index: 1;
+  position: relative;
+}
+
+.board4 .square:nth-child(even) {
+  background: palegreen;
+  animation-delay: 1s;
+}
+.board4 .square:nth-child(odd) {
+  background: green;
+  z-index: 1;
+  position: relative;
+}
+
+.board5 .square:nth-child(even) {
+  background: blue;
+  animation-delay: 1s;
+}
+.board5 .square:nth-child(odd) {
+  background: powderblue;
+  z-index: 1;
+  position: relative;
+}
+
+.board6 .square:nth-child(even) {
+  background: indigo;
+  animation-delay: 1s;
+}
+.board6 .square:nth-child(odd) {
+  background: mediumpurple;
+  z-index: 1;
+  position: relative;
+}
+
+.board7 .square:nth-child(even) {
+  background: lavender;
+  animation-delay: 1s;
+}
+.board7 .square:nth-child(odd) {
+  background: violet;
+  z-index: 1;
+  position: relative;
+}
+
+.square:nth-child(5n + 1) {
+  animation: rotate linear 5s infinite;
+}
+.square:nth-child(5n + 2) {
+  animation: rotate linear 5s infinite;
+  animation-delay: 0.25s;
+}
+.square:nth-child(5n + 3) {
+  animation: rotate linear 5s infinite;
+  animation-delay: 0.5s;
+}
+.square:nth-child(5n + 4) {
+  animation: rotate linear 5s infinite;
+  animation-delay: 0.75s;
+}
+.square:nth-child(5n + 5) {
+  animation: rotate linear 5s infinite;
+  animation-delay: 1s;
+}
+
+@keyframes rotate {
+  10% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(0);
+  }
+}
